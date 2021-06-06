@@ -5,5 +5,7 @@ CREATE COMPUTE MODULE mqsample_Compute
 	BEGIN
 		
 		SET OutputRoot = InputRoot;
+		
+		SET OutputRoot.XMLNSC	=	InputRoot.JSON.Data;
 	END;
 END MODULE;
